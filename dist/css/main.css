@@ -88,7 +88,7 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 3.6rem;
-  color: #D80200;
+  color: #f71717;
   text-align: center;
   margin-bottom: -1rem;
   margin-top: 6rem;
@@ -240,7 +240,7 @@ body {
   width: 22rem;
   height: 22rem;
   border-radius: 50%;
-  background-color: red;
+  background-color: #f71717;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,7 +272,7 @@ body {
   width: 21rem;
   height: 21rem;
   border-radius: 50%;
-  background-color: red;
+  background-color: #f71717;
   border: 2px solid white;
   position: relative;
 }
