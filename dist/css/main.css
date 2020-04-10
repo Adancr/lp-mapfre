@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Titillium ";
   margin: 0;
 }
 
@@ -16,16 +16,24 @@ body {
 .container {
   max-width: 1140px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .bg-image {
   background-image: url(../../images/bg-image.jpg);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header {
@@ -38,24 +46,98 @@ body {
   padding: 4rem 0;
 }
 
+@media (max-width: 667px) {
+  .header {
+    padding: 2rem 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .header img {
   max-width: 17rem;
 }
 
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .main h1:first-child {
-  font-size: 3.6rem;
+  font-family: "Titillium";
   font-weight: 700;
+  font-style: normal;
+  font-size: 3.6rem;
   color: #D80200;
   text-align: center;
   margin-bottom: -1rem;
   margin-top: 6rem;
 }
 
+@media (max-width: 880px) {
+  .main h1:first-child {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 835px) {
+  .main h1:first-child {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .main h1:first-child {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 667px) {
+  .main h1:first-child {
+    margin-top: 2.8rem;
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+  .main h1:first-child span {
+    display: inline-block;
+    padding-top: 0;
+  }
+}
+
 .main .h2 {
+  font-family: "Titillium";
   font-size: 3.5rem;
   font-weight: 600;
+  font-style: normal;
   text-align: center;
-  margin-top: 0;
+  margin-top: .6rem;
+}
+
+@media (max-width: 880px) {
+  .main .h2 {
+    font-size: 3.3rem;
+  }
+}
+
+@media (max-width: 835px) {
+  .main .h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .main .h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 667px) {
+  .main .h2 {
+    font-size: 2.7rem;
+    margin-top: .7rem;
+  }
 }
 
 .main .h2 span {
@@ -74,6 +156,13 @@ body {
   margin-top: 10rem;
 }
 
+@media (max-width: 667px) {
+  .wrap-items {
+    margin-top: 3.5rem;
+    grid-gap: 2rem;
+  }
+}
+
 .wrap-items .item-camposanto,
 .wrap-items .item-seguro {
   display: -webkit-box;
@@ -90,9 +179,11 @@ body {
 
 .wrap-items .item-camposanto .info-text,
 .wrap-items .item-seguro .info-text {
-  font-size: 2rem;
-  text-align: center;
+  font-family: "Titillium";
+  font-style: italic;
   font-weight: 600;
+  font-size: 2.2rem;
+  text-align: center;
 }
 
 .wrap-items .bg-circle1 {
@@ -111,6 +202,13 @@ body {
           align-items: center;
 }
 
+@media (max-width: 667px) {
+  .wrap-items .bg-circle1 {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
 .wrap-items .bg-circle2 {
   width: 21rem;
   height: 21rem;
@@ -120,22 +218,45 @@ body {
   position: relative;
 }
 
+@media (max-width: 667px) {
+  .wrap-items .bg-circle2 {
+    height: 19rem;
+    width: 19rem;
+  }
+}
+
 .wrap-items .bg-circle2 .title-cs {
-  font-size: 2.2rem;
+  font-family: "Titillium";
   font-weight: 700;
+  font-style: normal;
+  font-size: 2.2rem;
   text-align: center;
   margin: 4rem 0;
   line-height: 1;
   color: white;
 }
 
+@media (max-width: 667px) {
+  .wrap-items .bg-circle2 .title-cs {
+    margin: 3.68rem 0;
+  }
+}
+
 .wrap-items .bg-circle2 .title-seguro {
-  font-size: 2.2rem;
+  font-family: 'Titillium';
   font-weight: 700;
+  font-style: normal;
+  font-size: 2.2rem;
   text-align: center;
   margin: 4.2rem 0;
-  line-height: .9;
+  line-height: 0.9;
   color: white;
+}
+
+@media (max-width: 667px) {
+  .wrap-items .bg-circle2 .title-seguro {
+    margin: 3.8rem 0;
+  }
 }
 
 .wrap-items .bg-circle2 .flores {
@@ -145,6 +266,12 @@ body {
   bottom: -25%;
 }
 
+@media (max-width: 667px) {
+  .wrap-items .bg-circle2 .flores {
+    max-width: 14rem;
+  }
+}
+
 .wrap-items .bg-circle2 .palomo {
   max-width: 14rem;
   position: absolute;
@@ -152,11 +279,15 @@ body {
   bottom: -25%;
 }
 
+@media (max-width: 667px) {
+  .wrap-items .bg-circle2 .palomo {
+    max-width: 12rem;
+  }
+}
+
 .footer {
   background-color: #323136;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+  padding: .3rem 0;
 }
 
 .footer .info-footer {
@@ -167,6 +298,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
+  font-family: 'Titillium';
+  font-weight: 600;
+  font-style: normal;
   font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */

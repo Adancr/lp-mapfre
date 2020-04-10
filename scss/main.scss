@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Titillium ";
   margin: 0;
 }
 
@@ -17,20 +17,28 @@ body {
 .container {
   max-width: 1140px;
   margin: auto;
+  padding: 0 1rem;
 }
 .bg-image {
   background-image: url(../../images/bg-image.jpg);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
   object-fit: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   justify-content: center;
   padding: 4rem 0;
+  @media  (max-width: 667px) {
+    padding: 2rem 1rem;
+    justify-content: flex-start;
+    
+  }
 
   img {
     max-width: 17rem;
@@ -38,20 +46,58 @@ body {
 }
 
 .main {
+  flex: 1;
   h1:first-child {
-    font-size: 3.6rem;
+    font-family: "Titillium";
     font-weight: 700;
+    font-style: normal;
+    font-size: 3.6rem;
     color: $color-primary;
     text-align: center;
     margin-bottom: -1rem;
     margin-top: 6rem;
+    @media (max-width: 880px) {
+      font-size: 3.4rem;
+    }
+    @media (max-width: 835px) {
+      font-size: 3.2rem;
+    }
+    @media (max-width: 780px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 667px) {
+      margin-top: 2.8rem;
+      font-size: 2.8rem;
+      line-height: 1.1;
+      
+      span {
+        display: inline-block;
+        padding-top: 0;
+        // line-height: .5;
+      }
+    }
   }
 
   .h2 {
+    font-family: "Titillium";
     font-size: 3.5rem;
     font-weight: 600;
+    font-style: normal;
     text-align: center;
-    margin-top: 0;
+    margin-top: .6rem;
+    @media (max-width: 880px) {
+      font-size: 3.3rem;
+    }
+    @media (max-width: 835px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 780px) {
+      font-size: 2.8rem;
+    }
+    @media (max-width: 667px) {
+      font-size: 2.7rem;
+      margin-top: .7rem;
+    }
     span {
       font-weight: 700;
     }
@@ -66,6 +112,10 @@ body {
   grid-column-gap: 1rem;
   align-items: center;
   margin-top: 10rem;
+  @media (max-width: 667px) {
+    margin-top: 3.5rem;
+    grid-gap: 2rem;
+  }
 
   .item-camposanto,
   .item-seguro {
@@ -73,13 +123,13 @@ body {
     flex-direction: column;
     align-items: center;
     .info-text {
-      font-size: 2rem;
-      text-align: center;
+      font-family: "Titillium";
+      font-style: italic;
       font-weight: 600;
+      font-size: 2.2rem;
+      text-align: center;
     }
   }
-
-
 
   .bg-circle1 {
     width: 22rem;
@@ -89,6 +139,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 667px) {
+      height: 20rem;
+      width: 20rem;
+    }
   }
   .bg-circle2 {
     width: 21rem;
@@ -97,21 +151,35 @@ body {
     background-color: red;
     border: 2px solid white;
     position: relative;
+    @media (max-width: 667px) {
+      height: 19rem;
+      width: 19rem;
+    }
     .title-cs {
-      font-size: 2.2rem;
+      font-family: "Titillium";
       font-weight: 700;
+      font-style: normal;
+      font-size: 2.2rem;
       text-align: center;
       margin: 4rem 0;
       line-height: 1;
       color: white;
+      @media (max-width: 667px) {
+        margin: 3.68rem 0;
+      }
     }
     .title-seguro {
-      font-size: 2.2rem;
+      font-family: 'Titillium';
       font-weight: 700;
+      font-style: normal;
+      font-size: 2.2rem;
       text-align: center;
       margin: 4.2rem 0;
-      line-height: .9;
+      line-height: 0.9;
       color: white;
+      @media (max-width: 667px) {
+        margin: 3.8rem 0;
+      }
     }
     .flores {
       max-width: 16rem;
@@ -119,7 +187,9 @@ body {
       right: 7%;
       // left: 0;
       bottom: -25%;
-
+      @media (max-width: 667px) {
+        max-width: 14rem;
+      }
     }
     .palomo {
       max-width: 14rem;
@@ -127,24 +197,25 @@ body {
       right: 18%;
       // left: 0;
       bottom: -25%;
-
+      @media (max-width: 667px) {
+        max-width: 12rem;
+      }
     }
   }
-
 }
 
-
-// footer 
+// footer
 .footer {
   background-color: $color-footer;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+  padding: .3rem 0;
   .info-footer {
     display: flex;
     justify-content: space-between;
     color: white;
+    font-family: 'Titillium';
+    font-weight: 600;
+    font-style: normal;
     font-size: 1.2rem;
   }
-
 }
+
