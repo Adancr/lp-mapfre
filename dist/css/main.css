@@ -55,6 +55,12 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .header {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
 .header img {
   max-width: 17rem;
 }
@@ -62,6 +68,12 @@ body {
 @media (max-width: 667px) {
   .header img {
     max-width: 12rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .header img {
+    max-width: 11rem;
   }
 }
 
@@ -112,6 +124,12 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .main h1:first-child {
+    font-size: 2.1rem;
+  }
+}
+
 .main .h2 {
   font-family: "Titillium";
   font-size: 3.5rem;
@@ -144,6 +162,13 @@ body {
     font-size: 2.5rem;
     margin-top: .7rem;
     margin-bottom: -1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .main .h2 {
+    font-size: 2.1rem;
+    margin-top: .8rem;
   }
 }
 
@@ -201,6 +226,13 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .wrap-items .item-camposanto .info-text,
+  .wrap-items .item-seguro .info-text {
+    font-size: 1.8rem;
+  }
+}
+
 .wrap-items .bg-circle1 {
   width: 22rem;
   height: 22rem;
@@ -221,6 +253,15 @@ body {
   .wrap-items .bg-circle1 {
     height: 20rem;
     width: 20rem;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrap-items .bg-circle1 {
+    height: 16rem;
+    width: 16rem;
   }
 }
 
@@ -237,6 +278,15 @@ body {
   .wrap-items .bg-circle2 {
     height: 19rem;
     width: 19rem;
+    background-color: white;
+    border: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrap-items .bg-circle2 {
+    height: 15rem;
+    width: 15rem;
   }
 }
 
@@ -253,7 +303,15 @@ body {
 
 @media (max-width: 667px) {
   .wrap-items .bg-circle2 .title-cs {
-    margin: 3.68rem 0;
+    margin: 3.6rem 0;
+    color: black;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrap-items .bg-circle2 .title-cs {
+    font-size: 2.2rem;
+    margin-top: 3rem;
   }
 }
 
@@ -271,6 +329,14 @@ body {
 @media (max-width: 667px) {
   .wrap-items .bg-circle2 .title-seguro {
     margin: 2.8rem 0;
+    color: black;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrap-items .bg-circle2 .title-seguro {
+    margin-top: 2.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -287,6 +353,12 @@ body {
   }
 }
 
+@media (max-width: 550px) {
+  .wrap-items .bg-circle2 .flores {
+    max-width: 15rem;
+  }
+}
+
 .wrap-items .bg-circle2 .palomo {
   max-width: 14rem;
   position: absolute;
@@ -297,6 +369,18 @@ body {
 @media (max-width: 667px) {
   .wrap-items .bg-circle2 .palomo {
     max-width: 13rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrap-items .bg-circle2 .palomo {
+    max-width: 13rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrap-items .bg-circle2 .palomo {
+    max-width: 10rem;
   }
 }
 
