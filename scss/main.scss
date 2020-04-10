@@ -266,7 +266,7 @@ body {
 // footer
 .footer {
   background-color: $color-footer;
-  padding: 0.3rem 0;
+  padding: .3rem 0;
   .info-footer {
     display: flex;
     justify-content: space-between;
@@ -275,5 +275,17 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 1.2rem;
+    @media (max-width: 550px) {
+      align-items: center;
+     
+      small {
+        display: block;
+        line-height: .8;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    padding: 0;
   }
 }
