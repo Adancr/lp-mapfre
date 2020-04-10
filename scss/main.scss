@@ -35,13 +35,16 @@ body {
   justify-content: center;
   padding: 4rem 0;
   @media  (max-width: 667px) {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     justify-content: flex-start;
-    
+        
   }
 
   img {
     max-width: 17rem;
+    @media (max-width: 667px) {
+      max-width: 12rem;
+    }
   }
 }
 
@@ -66,10 +69,10 @@ body {
       font-size: 3rem;
     }
     @media (max-width: 667px) {
-      margin-top: 2.8rem;
-      font-size: 2.8rem;
+      margin-top: 2rem;
+      font-size: 2.6rem;
       line-height: 1.1;
-      
+           
       span {
         display: inline-block;
         padding-top: 0;
@@ -95,8 +98,9 @@ body {
       font-size: 2.8rem;
     }
     @media (max-width: 667px) {
-      font-size: 2.7rem;
+      font-size: 2.5rem;
       margin-top: .7rem;
+      margin-bottom: -1rem;
     }
     span {
       font-weight: 700;
@@ -113,8 +117,8 @@ body {
   align-items: center;
   margin-top: 10rem;
   @media (max-width: 667px) {
-    margin-top: 3.5rem;
-    grid-gap: 2rem;
+    margin-top: 1rem;
+    grid-gap: 4rem;
   }
 
   .item-camposanto,
@@ -128,6 +132,10 @@ body {
       font-weight: 600;
       font-size: 2.2rem;
       text-align: center;
+      @media (max-width: 667px) {
+        margin-bottom: -1rem;
+        line-height: 1.1;
+      }
     }
   }
 
@@ -178,7 +186,7 @@ body {
       line-height: 0.9;
       color: white;
       @media (max-width: 667px) {
-        margin: 3.8rem 0;
+        margin: 2.8rem 0;
       }
     }
     .flores {
@@ -188,7 +196,7 @@ body {
       // left: 0;
       bottom: -25%;
       @media (max-width: 667px) {
-        max-width: 14rem;
+        max-width: 15rem;
       }
     }
     .palomo {
@@ -198,7 +206,7 @@ body {
       // left: 0;
       bottom: -25%;
       @media (max-width: 667px) {
-        max-width: 12rem;
+        max-width: 13rem;
       }
     }
   }
