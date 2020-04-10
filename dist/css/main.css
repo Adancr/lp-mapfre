@@ -136,7 +136,7 @@ body {
   font-weight: 600;
   font-style: normal;
   text-align: center;
-  margin-top: .6rem;
+  margin-top: 0.6rem;
 }
 
 @media (max-width: 880px) {
@@ -160,7 +160,7 @@ body {
 @media (max-width: 667px) {
   .main .h2 {
     font-size: 2.5rem;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
     margin-bottom: -1rem;
   }
 }
@@ -168,7 +168,7 @@ body {
 @media (max-width: 450px) {
   .main .h2 {
     font-size: 2.1rem;
-    margin-top: .8rem;
+    margin-top: 0.8rem;
   }
 }
 
@@ -310,13 +310,13 @@ body {
 
 @media (max-width: 550px) {
   .wrap-items .bg-circle2 .title-cs {
-    font-size: 2.2rem;
-    margin-top: 3rem;
+    font-size: 2rem;
+    margin-top: 4rem;
   }
 }
 
 .wrap-items .bg-circle2 .title-seguro {
-  font-family: 'Titillium';
+  font-family: "Titillium";
   font-weight: 700;
   font-style: normal;
   font-size: 2.2rem;
@@ -336,7 +336,7 @@ body {
 @media (max-width: 550px) {
   .wrap-items .bg-circle2 .title-seguro {
     margin-top: 2.6rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -353,9 +353,11 @@ body {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 450px) {
   .wrap-items .bg-circle2 .flores {
-    max-width: 15rem;
+    max-width: 11.8rem;
+    bottom: -31%;
+    right: 11%;
   }
 }
 
@@ -380,13 +382,13 @@ body {
 
 @media (max-width: 450px) {
   .wrap-items .bg-circle2 .palomo {
-    max-width: 10rem;
+    max-width: 9rem;
   }
 }
 
 .footer {
   background-color: #323136;
-  padding: .3rem 0;
+  padding: 0.3rem 0;
 }
 
 .footer .info-footer {
@@ -397,7 +399,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
-  font-family: 'Titillium';
+  font-family: "Titillium";
   font-weight: 600;
   font-style: normal;
   font-size: 1.2rem;
