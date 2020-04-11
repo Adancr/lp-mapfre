@@ -196,6 +196,12 @@ body {
   }
 }
 
+@media (max-height: 667px) {
+  .wrap-items {
+    grid-gap: 0;
+  }
+}
+
 .wrap-items .item-camposanto,
 .wrap-items .item-seguro {
   display: -webkit-box;
@@ -227,12 +233,25 @@ body {
   }
 }
 
+@media (max-height: 667px) {
+  .wrap-items .item-camposanto .info-text,
+  .wrap-items .item-seguro .info-text {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 450px) {
   .wrap-items .item-camposanto .info-text,
   .wrap-items .item-seguro .info-text {
     font-size: 2rem;
     margin-top: 2rem;
     grid-gap: 7rem;
+  }
+}
+
+@media (max-height: 667px) {
+  .wrap-items .item-title {
+    margin-bottom: 4rem;
   }
 }
 

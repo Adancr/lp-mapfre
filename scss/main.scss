@@ -133,6 +133,9 @@ body {
     margin-top: 1rem;
     grid-gap: 4rem;
   }
+  @media (max-height: 667px) {
+    grid-gap: 0;
+  }
 
   .item-camposanto,
   .item-seguro {
@@ -149,11 +152,23 @@ body {
         margin-bottom: -1rem;
         line-height: 1.1;
       }
+
+      @media (max-height: 667px) {
+        margin-top: 0;
+      }
+
       @media (max-width: 450px) {
         font-size: 2rem;
         margin-top: 2rem;
     grid-gap: 7rem;
       }
+    }
+  }
+
+  @media (max-height: 667px) {
+    .item-title {
+      margin-bottom: 4rem;
+      
     }
   }
 
